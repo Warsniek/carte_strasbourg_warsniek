@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3700b0d35b332f9879fbe68072932932 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3700b0d35b332f9879fbe68072932932" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3700b0d35b332f9879fbe68072932932 = L.map(
+                "map_3700b0d35b332f9879fbe68072932932",
+                {
+                    center: [48.583, 7.7455],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9671e65fd63d21002e66b0195f01005 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e9671e65fd63d21002e66b0195f01005.addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var marker_528be09d0f164cb801f21ad97f8f7602 = L.marker(
+                [48.5814, 7.7503],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_236171a954dcf12763d7c272f4667ad9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_528be09d0f164cb801f21ad97f8f7602.setIcon(icon_236171a954dcf12763d7c272f4667ad9);
+        
+    
+        var popup_0d0bfdc693182ce7bf149c000c9ac7ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46024814e2a1f889b79df51710c59c23 = $(`<div id="html_46024814e2a1f889b79df51710c59c23" style="width: 100.0%; height: 100.0%;">Cathédrale Notre-Dame</div>`)[0];
+                popup_0d0bfdc693182ce7bf149c000c9ac7ab.setContent(html_46024814e2a1f889b79df51710c59c23);
+            
+        
+
+        marker_528be09d0f164cb801f21ad97f8f7602.bindPopup(popup_0d0bfdc693182ce7bf149c000c9ac7ab)
+        ;
+
+        
+    
+    
+            var marker_7c83c2edeac534f3ed26b41982ec2845 = L.marker(
+                [48.5811, 7.7498],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_665833bc04aee801f16481ada7e9e0ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c83c2edeac534f3ed26b41982ec2845.setIcon(icon_665833bc04aee801f16481ada7e9e0ed);
+        
+    
+        var popup_a86dc9b25132ea66bb8080612a3fd41e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57644f8fd5a497ea847d530153b1dd32 = $(`<div id="html_57644f8fd5a497ea847d530153b1dd32" style="width: 100.0%; height: 100.0%;">Maison Kammerzell</div>`)[0];
+                popup_a86dc9b25132ea66bb8080612a3fd41e.setContent(html_57644f8fd5a497ea847d530153b1dd32);
+            
+        
+
+        marker_7c83c2edeac534f3ed26b41982ec2845.bindPopup(popup_a86dc9b25132ea66bb8080612a3fd41e)
+        ;
+
+        
+    
+    
+            var marker_b7a72d76f09ae47c14b85e7bb5168409 = L.marker(
+                [48.5803, 7.7519],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_5dd14966c87b9d06d23552a4f8073ad9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7a72d76f09ae47c14b85e7bb5168409.setIcon(icon_5dd14966c87b9d06d23552a4f8073ad9);
+        
+    
+        var popup_9db0fb6a01bfabbf83740e79f9209351 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a554f1ee90da25a701d53dc48c8473b = $(`<div id="html_6a554f1ee90da25a701d53dc48c8473b" style="width: 100.0%; height: 100.0%;">Palais Rohan</div>`)[0];
+                popup_9db0fb6a01bfabbf83740e79f9209351.setContent(html_6a554f1ee90da25a701d53dc48c8473b);
+            
+        
+
+        marker_b7a72d76f09ae47c14b85e7bb5168409.bindPopup(popup_9db0fb6a01bfabbf83740e79f9209351)
+        ;
+
+        
+    
+    
+            var marker_90ebd8e1d0b317863d33bea88b5ad1b7 = L.marker(
+                [48.5792, 7.7446],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_cfaf9733c19cc3db4bb5cbba03e766a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90ebd8e1d0b317863d33bea88b5ad1b7.setIcon(icon_cfaf9733c19cc3db4bb5cbba03e766a8);
+        
+    
+        var popup_662dab707d52ab98588eed5522812de0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c73e84cfff7759163f13f6e06579a47 = $(`<div id="html_6c73e84cfff7759163f13f6e06579a47" style="width: 100.0%; height: 100.0%;">Église Saint-Thomas</div>`)[0];
+                popup_662dab707d52ab98588eed5522812de0.setContent(html_6c73e84cfff7759163f13f6e06579a47);
+            
+        
+
+        marker_90ebd8e1d0b317863d33bea88b5ad1b7.bindPopup(popup_662dab707d52ab98588eed5522812de0)
+        ;
+
+        
+    
+    
+            var marker_6c678a9f4159e9944ef04e0c1c22da98 = L.marker(
+                [48.5844, 7.7457],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_4432e9560fc1ab1121a8ff62e6066fe0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c678a9f4159e9944ef04e0c1c22da98.setIcon(icon_4432e9560fc1ab1121a8ff62e6066fe0);
+        
+    
+        var popup_4c23e78ba05d012c09a75547df61b278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a98f4734dc76ed16bfcc2662f9a9104 = $(`<div id="html_0a98f4734dc76ed16bfcc2662f9a9104" style="width: 100.0%; height: 100.0%;">Église Saint-Pierre-le-Jeune</div>`)[0];
+                popup_4c23e78ba05d012c09a75547df61b278.setContent(html_0a98f4734dc76ed16bfcc2662f9a9104);
+            
+        
+
+        marker_6c678a9f4159e9944ef04e0c1c22da98.bindPopup(popup_4c23e78ba05d012c09a75547df61b278)
+        ;
+
+        
+    
+    
+            var marker_a73bb7d03dec92a28d9900a8b9a8c9bb = L.marker(
+                [48.583, 7.7455],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_41413469db34c4eb1add6468b288f8fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a73bb7d03dec92a28d9900a8b9a8c9bb.setIcon(icon_41413469db34c4eb1add6468b288f8fd);
+        
+    
+        var popup_15a4fb79806be17b3b3768683e60bab9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15792e35869c87f1938a3d51a668380b = $(`<div id="html_15792e35869c87f1938a3d51a668380b" style="width: 100.0%; height: 100.0%;">Place Kléber</div>`)[0];
+                popup_15a4fb79806be17b3b3768683e60bab9.setContent(html_15792e35869c87f1938a3d51a668380b);
+            
+        
+
+        marker_a73bb7d03dec92a28d9900a8b9a8c9bb.bindPopup(popup_15a4fb79806be17b3b3768683e60bab9)
+        ;
+
+        
+    
+    
+            var marker_f72922cc7e62021c411eab4aac600d79 = L.marker(
+                [48.5796, 7.7393],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_eacfc1569ed628f686873ba9095f7d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f72922cc7e62021c411eab4aac600d79.setIcon(icon_eacfc1569ed628f686873ba9095f7d0f);
+        
+    
+        var popup_7d3fafacceb5e8247903d66201894376 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44f8e33aa23afd19375c842377335be5 = $(`<div id="html_44f8e33aa23afd19375c842377335be5" style="width: 100.0%; height: 100.0%;">Petite France</div>`)[0];
+                popup_7d3fafacceb5e8247903d66201894376.setContent(html_44f8e33aa23afd19375c842377335be5);
+            
+        
+
+        marker_f72922cc7e62021c411eab4aac600d79.bindPopup(popup_7d3fafacceb5e8247903d66201894376)
+        ;
+
+        
+    
+    
+            var marker_ae41338ff0262ffdaaba59c54f2413a9 = L.marker(
+                [48.579, 7.7377],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_fbdd4455f98e79b30b01a5bfe9ef8b85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae41338ff0262ffdaaba59c54f2413a9.setIcon(icon_fbdd4455f98e79b30b01a5bfe9ef8b85);
+        
+    
+        var popup_043d6e00e6ba2b08aa3c4da65ef49c89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8a2d21ca1e17706cd600996e8e2bbb0 = $(`<div id="html_f8a2d21ca1e17706cd600996e8e2bbb0" style="width: 100.0%; height: 100.0%;">Ponts Couverts</div>`)[0];
+                popup_043d6e00e6ba2b08aa3c4da65ef49c89.setContent(html_f8a2d21ca1e17706cd600996e8e2bbb0);
+            
+        
+
+        marker_ae41338ff0262ffdaaba59c54f2413a9.bindPopup(popup_043d6e00e6ba2b08aa3c4da65ef49c89)
+        ;
+
+        
+    
+    
+            var marker_57b94affa3275934b9a253759654789e = L.marker(
+                [48.5778, 7.7361],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_203e8a218fdadc4092e6fa5088b86d19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57b94affa3275934b9a253759654789e.setIcon(icon_203e8a218fdadc4092e6fa5088b86d19);
+        
+    
+        var popup_f8e601d911348c766963a0883baca232 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a185aec69951ded566ab6270a6b32b4d = $(`<div id="html_a185aec69951ded566ab6270a6b32b4d" style="width: 100.0%; height: 100.0%;">Barrage Vauban</div>`)[0];
+                popup_f8e601d911348c766963a0883baca232.setContent(html_a185aec69951ded566ab6270a6b32b4d);
+            
+        
+
+        marker_57b94affa3275934b9a253759654789e.bindPopup(popup_f8e601d911348c766963a0883baca232)
+        ;
+
+        
+    
+    
+            var marker_8391b08e6a46640f0057a84fe970a14a = L.marker(
+                [48.5856, 7.7428],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_cc438ba70d917b5f6ab35f18da1d433b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8391b08e6a46640f0057a84fe970a14a.setIcon(icon_cc438ba70d917b5f6ab35f18da1d433b);
+        
+    
+        var popup_22c0f8d10fc0da802afeaab929cfb657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36c2a3aefab65b4f9258b6998ce065cc = $(`<div id="html_36c2a3aefab65b4f9258b6998ce065cc" style="width: 100.0%; height: 100.0%;">Novotel Centre Halles</div>`)[0];
+                popup_22c0f8d10fc0da802afeaab929cfb657.setContent(html_36c2a3aefab65b4f9258b6998ce065cc);
+            
+        
+
+        marker_8391b08e6a46640f0057a84fe970a14a.bindPopup(popup_22c0f8d10fc0da802afeaab929cfb657)
+        ;
+
+        
+    
+    
+            var marker_cdd8b1c9b9ace2086ea4c4f23646c98b = L.marker(
+                [48.5851, 7.7437],
+                {}
+            ).addTo(map_3700b0d35b332f9879fbe68072932932);
+        
+    
+            var icon_5e605a7c0a030e2b535a497c6fab87da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cdd8b1c9b9ace2086ea4c4f23646c98b.setIcon(icon_5e605a7c0a030e2b535a497c6fab87da);
+        
+    
+        var popup_2e7184d1b4b3af7af3cf04d0abc0ea91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c73f818e149deec365219be6a02a775f = $(`<div id="html_c73f818e149deec365219be6a02a775f" style="width: 100.0%; height: 100.0%;">Brasserie Kooma</div>`)[0];
+                popup_2e7184d1b4b3af7af3cf04d0abc0ea91.setContent(html_c73f818e149deec365219be6a02a775f);
+            
+        
+
+        marker_cdd8b1c9b9ace2086ea4c4f23646c98b.bindPopup(popup_2e7184d1b4b3af7af3cf04d0abc0ea91)
+        ;
+
+        
+    
+</script>
+</html>
